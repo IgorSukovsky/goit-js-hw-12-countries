@@ -6,7 +6,7 @@ const fetchData = (request = '/') =>
 const fetchByName = name =>
   fetch(`${JSON_BASE_URL}/name/${name}`).then(response => {
     if (response.status === 404) {
-      throw new Error(`Ошибка! Пользователя с id "${name}" не существует`);
+      throw new Error(`Thank God error!!!!! "${name}" does not exist`);
     }
     return response.json();
   });
